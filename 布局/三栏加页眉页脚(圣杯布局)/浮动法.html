@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+          width: 80%;
+          margin: 0 auto;
+        }
+        #header{
+          height: 100px;
+          background: #66ccff;
+        }
+        #main{
+          height: 500px;
+          background: #ffcccc;
+        }
+        #footer{
+          height: 150px;
+          background: #99ccff;
+        }
+
+        #middle{
+          width: 100%;
+          float: left;
+        }
+        #left{
+          float: left;
+          width: 150px;
+          height: 100%;
+          margin-left: -100%;
+          background: #ccffff;
+        }
+        #right{
+          float: left;
+          width: 180px;
+          height: 100%;
+          margin-left: -180px;
+          background: #ccffff;
+        }
+        .content{
+          height:500px;
+          margin: 0 180px 0 150px
+
+        }
+    </style>
+</head>
+<body>
+
+<header id="header" class="wrap">#header</header>
+<section id="main" class="wrap">
+  <section id="middle">
+    <div class="content">content</div>
+  </section>
+  <aside id="left">left</aside>
+  <aside id="right">right</aside>
+</section>
+<footer id="footer" class="wrap">#footer</footer>
+ 
+
+</body>
+</html>

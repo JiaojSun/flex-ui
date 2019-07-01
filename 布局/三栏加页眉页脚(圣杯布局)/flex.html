@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+            margin:0 auto;
+            width:70%;
+        }
+        #header{
+            height:100px;
+            background: #66ccff;
+        }
+        #main{
+            height:500px;
+            background: #ffcccc;
+            display: flex
+        }
+        #footer{
+            height:100px;
+            background: #99ccff;
+        }
+
+        #middle{
+          flex: 1
+        }
+        #left{
+          flex: 0 0 200px;
+          background: #ccffff;
+          order: -1;
+        }
+        #right{
+          flex: 0 0 200px;
+          background: #ccffff;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header" class="wrap">#header</header>
+<section id="main" class="wrap">
+    <section id="middle">#middle</section>
+    <aside id="left">#left</aside>
+    <aside id="right">#right</aside>
+</section>
+<footer id="footer" class="wrap">#footer</footer>
+
+</body>
+</html>

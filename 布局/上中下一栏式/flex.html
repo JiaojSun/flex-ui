@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 此处参考阮一峰实例篇中圣杯布局
+    （中间部分看做一体） -->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin:0;
+            font-size:20px;
+            text-align: center;
+        }
+
+        .warp{
+            margin:0 auto;
+        }
+
+        .holy {
+          display: flex;
+          flex-direction: column;
+          /* height: 1000px; */
+        }
+        #header{
+            width: 900px;
+            /* height无效 */
+            height:400px;
+            background: #6cf;
+            flex: 1;
+        }
+        #main{
+            width: 900px;
+            background: #ccffff;
+            flex: 0 0 500px
+        }
+        #footer{
+            width: 900px;
+            /* height无效 */
+            height:180px;
+            background: #99ccff;
+            flex: 1;
+        }
+
+        /* .
+          flex: 1 =? 1 1 0%
+          flex: auto => 1 1 auto
+          flex: none => 0 0 auto;
+
+          flex-basis优先级 自身设定 > 0%(flex:1按字体的高度) > auto(采用height)
+        */
+    </style>
+</head>
+<body>
+<div class="holy">
+  <header id="header" class="warp">#header</header>
+  <section id="main" class="warp">#section</section>
+  <footer id="footer" class="warp">#footer</footer>
+</div>
+
+</body>
+</html>

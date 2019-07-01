@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+          width: 900px;
+          margin: 0 auto;
+        }
+        #header{
+          height: 100px;
+          background: blueviolet
+        }
+        #main{
+          height: 500px;/* 父级设置宽高也是一种清浮动的方式 */
+          border: 1px solid red;
+        }
+        #footer{
+          height: 150px;
+          background: blueviolet
+        }
+
+        #left{
+          float: left;
+          width: 200px;
+          height: 500px;
+          background: greenyellow;
+        }
+        #right{
+          float: left;
+          width: 700px;
+          height: 500px;
+          background: orange;
+        }
+    </style>
+</head>
+<body>
+<header id="header" class="wrap"></header>
+<section id="main" class="wrap">
+  <aside id="left"></aside>
+  <div id="right"></div>
+</section>
+<footer id="footer" class="wrap"></footer>
+
+
+</body>
+</html>

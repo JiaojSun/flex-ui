@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+          margin: 0 auto;
+          width: 80%;
+        }
+        #left{
+          background: #ccffff;
+          height: 100px;
+          float: bottom;
+
+        }
+        #right{
+          background: #ccffff;
+          height: 100px;
+          float: top;
+        }
+        #main{
+          background: #ffcccc;
+          display: flex;
+          position: relative;
+        }
+        
+        .test {
+          flex: 1;
+          height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <aside id="left">1111</aside>
+    <section id="main"><div class="test"></div></section>
+    <aside id="right">111</aside>
+</div>
+
+</body>
+</html>

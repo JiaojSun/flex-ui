@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+          width: 900px;
+          margin: 0 auto;
+        }
+        #header{
+          background: #66ccff;
+          height: 100px;
+        }
+        #main{
+          background: #ffcccc;
+          height: 500px;
+          display: flex;
+        }
+        #footer{
+          background: #99ccff;
+          height: 150px;
+        }
+
+        #left{
+          background: #ccffff;
+          flex: 0 0 200px;
+        }
+        #right{
+          background: #7cd677;
+          flex: 1
+        }
+    </style>
+</head>
+<body>
+
+<header id="header" class="wrap"></header>
+<section id="main" class="wrap">
+    <aside id="left"></aside>
+    <div id="right"></div>
+</section>
+<footer id="footer" class="wrap"></footer>
+
+</body>
+</html>
